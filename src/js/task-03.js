@@ -17,7 +17,7 @@ const list = document.querySelector("ul.gallery");
 
 const array = images.map((values) => 
 `<li class="item">
-<img src="${values.url}" alt="${values.alt}" weight="420px" height="420px">
+<img src="${values.url}" alt="${values.alt}" weight="320px" height="320px">
 </li>`)
 .join("");
 
@@ -26,7 +26,7 @@ list.innerHTML = array;
 list.style.display = "grid";
 list.style.textAlign = "center"; 
 list.style.listStyleType = "none";
-list.style.gridTemplateColumns = "repeat(2, 800px)";
-list.style.gridRowGap = "30px";
-list.style.gridcolumnGap = "30px";
+list.style.gridTemplateColumns = "repeat(2, 600px)";
+list.style.gridRowGap = "20px";
+list.style.gridcolumnGap = "20px";
 
