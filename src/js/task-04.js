@@ -11,4 +11,3 @@ decButton.addEventListener("click", () => {
   incButton.addEventListener("click", () => {
     counterValue.textContent = Number(counterValue.textContent) + 1;
   });
-
