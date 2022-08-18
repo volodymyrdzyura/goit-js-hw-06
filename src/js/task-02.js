@@ -9,14 +9,13 @@ const ingredients = [
 
 const list = document.querySelector("#ingredients")
 
+const process = ingredients.map(ingredient => {
+  const itemElem = document.createElement("li");
+  itemElem.textContent = ingredient;
+  itemElem.classList = "Item";
+  return itemElem
+})
 
-for (let index in ingredients){
- const item_Elem = document.createElement("li");
- item_Elem.textContent = ingredients[index]
- item_Elem.classList.add("item")
-list.append(item_Elem)
-}
-
-// console.log(list)
+list.append(...process)
 
 

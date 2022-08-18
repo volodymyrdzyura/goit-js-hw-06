@@ -21,7 +21,9 @@ const array = images.map((values) =>
 </li>`)
 .join("");
 
-list.innerHTML = array;
+// list.innerHTML = array;
+list.insertAdjacentHTML("afterbegin", array)
+
 
 list.style.display = "grid";
 list.style.textAlign = "center"; 

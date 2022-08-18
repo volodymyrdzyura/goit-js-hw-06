@@ -3,11 +3,12 @@ function getRandomHexColor() {
 }
 
 const color = document.querySelector(".color");
-const button = document.querySelector(".change-color")
-const body = document.querySelector("body")
+const button = document.querySelector(".change-color");
+const body = document.querySelector("body");
 
 button.addEventListener("click", () => {
-  color.textContent = `${getRandomHexColor()}`
-  body.style.backgroundColor = `${getRandomHexColor()}`
+  let rundomColor = getRandomHexColor();
+  color.textContent = `${rundomColor}`
+  body.style.backgroundColor = `${rundomColor}`
 })
 
